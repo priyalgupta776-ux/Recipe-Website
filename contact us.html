@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        #box {
+            padding: 20px;
+            border: 1px solid #ccc;
+            width: 280px;
+            border-radius: 8px;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 10px;
+        }
+        button {
+            background:#e7492a;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #e7492a;
+        }
+    </style>
+</head>
+<body> 
+<p style="background-color:#E74C3C; color: #2C3E50; font-family:'Comic Sans', cursive; font-size:40px ; font-style:oblique; margin: none;;">the TastyTwirl</p>
+<p style="background-color:#f7b500; border: none; padding: none; font-family: monospace; color:#555; font-size: 15px;">“Cook, Twirl & Taste Happiness!”</p>
+<div id="box"></div>
+<script>
+    document.getElementById("box").innerHTML = `
+        <h3>Contact Us</h3>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <input type="text" placeholder="Message">
+        <button onclick="alert('Message Sent!')">Send</button>
+    `;
+</script>
+
+</body>
+</html>

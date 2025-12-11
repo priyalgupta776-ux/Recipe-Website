@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> The TastyTwirl </title>
+        <style>
+            .button{
+                background-color: #A8E6CF;
+                color: #2C3E50;
+                font-family:fantasy;
+                padding: 12px 25px;
+                margin:5px;
+                border:none;
+                border-radius: 25px;
+                font-size: 16px;
+                cursor: pointer;
+                transition: 0.3s;
+
+            }
+            .button:hover{
+                background-color: #81D4FA;
+            }
+            .btn{
+                text-align: center;
+            }
+            .reviews{
+                text-align: center;
+                padding: 20px;
+                margin-top: 10px;
+                font-family: Arial, Helvetica, sans-serif;
+
+
+            }
+            .reviews div{
+                background: #FFF5E9;
+                padding: 10px;
+                margin: 10px auto;
+                width: 60%;
+                border-radius: 10px;
+                font-size: 18px;
+            }
+        
+            .reviews div:hover{
+                opacity: 0.6;
+                transition: 0.15s;
+            }
+
+
+            .recipes {
+            display:grid;
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 20px;  
+            padding: 10px;
+        }
+
+
+        
+        .card {
+            background: #e8e4e7;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.03);
+            background-color:aliceblue;
+        }
+
+        .card img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .name {
+            font-size: 20px;
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color:#2C3E50;
+        }
+
+        .rating {
+            color: #f7b500;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .time {
+            color: #555;
+            font-size: 14px;
+        }
+
+
+        </style>
+    
+    </head>
+     <body>
+        <p style="background-color:#E74C3C; color: #2C3E50; font-family:'Comic Sans', cursive; font-size:40px ; font-style:oblique; margin: none;;">the TastyTwirl</p>
+        <p style="background-color:#f7b500; border: none; padding: none; font-family: monospace; color:#555; font-size: 15px;">“Cook, Twirl & Taste Happiness!”</p>
+        <div class="btn">
+            <a href="website.html"><button class="button"> HOME</button></a>
+            <a href="recipe.html"><button class="button"> RECIPE</button></a>
+            <a href="about us.html"><button class="button"> ABOUT US</button></a>
+            <a href="contact us.html"><button class="button"> CONTACT US</button></a>
+        </div>
+        <h1 style=" color: #2C3E50; font-family:Georgia, 'Times New Roman', Times, serif; text-align: end; font-size: 20px; border-bottom: 3px solid #F1C40F; padding-bottom: 10px; display: inline-block;"> Our Featured Recipes</h1>
+         <div class="recipes">
+        
+        <div class="card">
+            <img src="Images/1.jpg" alt="">
+            <div class="name">Spaghetti Arrabiata</div>
+            <div class="rating">★★★★☆</div>
+            <div class="time">Prep time: 20 mins</div>
+        </div>
+
+        <div class="card">
+            <img src="Images/2.jpg" alt="">
+            <div class="name"> Grilled Cheese Sandwich</div>
+            <div class="rating">★★★★★</div>
+            <div class="time">Prep time: 10 mins</div>
+        </div>
+
+        <div class="card">
+            <img src="Images/3.jpg" alt="">
+            <div class="name">Choco Lava Cake</div>
+            <div class="rating">★★★★☆</div>
+            <div class="time">Prep time: 30 mins</div>
+        </div>
+
+        <div class="card">
+            <img src="Images/4.png" alt="">
+            <div class="name">Filipino Lemonade</div>
+            <div class="rating">★★★☆☆</div>
+            <div class="time">Prep time: 10 mins</div>
+        </div>
+
+        <div class="card">
+            <img src="Images/5.jpg" alt="">
+            <div class="name">Corn Fritters</div>
+            <div class="rating">★★★★★</div>
+            <div class="time">Prep time: 25 mins</div>
+        </div>
+
+        <div class="card">
+            <img src="Images/6.jpg" alt="">
+            <div class="name">Hwachae</div>
+            <div class="rating">★★★★☆</div>
+            <div class="time">Prep time: 15 mins</div>
+        </div>
+
+    </div>
+    <p style="background-color: #81D4FA; color: #2C3E50; text-align: center; font-family:Georgia, 'Times New Roman', Times, serif; font-size: 20px; "> User Reviews</p>
+    <div class="reviews">
+        <div>The pasta was delicious!</div>
+        <div>Quick and Easy</div>
+        <div>Easy to follow instructions</div>
+
+    </div>
+
+        </body>
+</html>
